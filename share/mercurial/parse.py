@@ -52,5 +52,7 @@ for file in files:
     if option != "":
       synopsis = "%s [Options: %s]"%(synopsis,option)
 
+    abstract = "<pre><code>%s</code></pre> %s"%(synopsis,description)
+
     if searchname != None:
-      print "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s"%(searchname,'',url,searchname,synopsis,description,'mercurial','en')
+      print "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s"%(searchname,'A','','','','','','','','','',abstract,url)
